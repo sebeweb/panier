@@ -14,7 +14,7 @@ import java.util.Scanner;
 public class panier {
 
     // fontion qui permet d'ajouter des produits 
-    public static void ajout(HashMap panier) {
+    public static void ajout(HashMap<String, Integer> panier) {
         //on initialise un nouveau Scanner
         Scanner sc = new Scanner(System.in);
         //on affiche une question
@@ -27,7 +27,7 @@ public class panier {
         panier.put(produit, quantite);
     }
 //la fonction choix affiche les choix et redirige vers le fonction adequat
-    public static void choix(HashMap panier) {
+    public static void choix(HashMap<String, Integer> panier) {
         //on initialise un nouveau Scanner
         Scanner sc = new Scanner(System.in);
          //on initialise un flag a false
@@ -45,6 +45,7 @@ public class panier {
             switch (action) {
                 case "q":
                     System.exit(0);
+                    break;
                 case "1":
                     ajout(panier);
                     break;
@@ -56,7 +57,6 @@ public class panier {
                     break;
                 default:
                     System.out.println("je ne comprent pas");
-                    ;
             }
         }
     }
@@ -73,7 +73,7 @@ public class panier {
         }
     }
 
-    public static void supprimer(HashMap panier) {
+    public static void supprimer(HashMap<String, Integer> panier) {
         System.out.println("Quelle produit souhaiter vous supprimer ?(a pour annuler)");
         Scanner sc = new Scanner(System.in);
         String action = sc.nextLine();
