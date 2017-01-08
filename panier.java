@@ -3,15 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package testjava;
-
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
 /**
  *
- * @author Sébastien JAVARY
+ * @author SÃ©bastien JAVARY
  */
 public class panier {
 
@@ -87,7 +85,7 @@ public class panier {
         } else if (panier.containsKey(action)) {
 //            si c'est vrai alors on supprime la ligne
             panier.remove(action);
-            System.out.println(action + " a été supprimer du panier");
+            System.out.println(action + " a Ã©tÃ© supprimer du panier");
         }
     }
 
